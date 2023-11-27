@@ -122,66 +122,67 @@ img {
   font-family: 'Raleway', sans-serif;
   font-size: 0.75rem;
   margin-bottom: 20px;
+  width: 100%;
+
+  .color,
+  .size {
+    width: 20%;
+  }
+
+  .quantity {
+    width: 60%;
+  }
+
 
   select {
     width: 100px;
   }
 
   th {
-    border-bottom: 1px solid #C3C3C3;
     border-right: 1px solid #C3C3C3;
+    border-bottom: 1px solid #C3C3C3;
     padding: 8px 0;
     width: 20%;
   }
 
-  th:last-child {
-    border-right: 0px solid #C3C3C3;
-  }
-
   td {
     border-bottom: 1px solid #C3C3C3;
-    border-right: 1px solid #C3C3C3;
     padding: 0px 0;
+    text-align: center;
+padding: 10px;
   }
 
-  td:last-child {
-    border-right: 0px solid #C3C3C3;
-    text-align: center;
+.th3 {
+  border-right: none;
+}
+
+  .last {
+    th {
+      border-bottom: none;
+    }
+    td {
+      border-bottom: none;
+    }
   }
 
   .selectbox-003 {
-    display: inline-flex;
+
     align-items: center;
     position: relative;
   }
 
-  .selectbox-003::after {
-    position: absolute;
-    right: 15px;
-    width: 10px;
-    height: 7px;
-    background-color: #535353;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-    content: '';
-    pointer-events: none;
-  }
+
 
   .selectbox-003 select {
-    appearance: none;
-    min-width: 200px;
-    padding: 0em calc(.8em + 30px) 0em .8em;
     border: 1px solid #cccccc;
-    border-radius: 3px;
-    background-color: #fff;
-    color: #333333;
-    font-size: 1em;
     width: 100%;
+    padding: 0 10px;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
   }
 }
 
-p {
-  margin-bottom: 30px;
-}
+
 
 .add {
   background-color: #4B4B4B;
@@ -191,6 +192,7 @@ p {
   width: 98%;
   text-align: center;
   line-height: 50px;
+  margin-bottom: 30px;
 }
 
 .table2 {
@@ -200,28 +202,11 @@ p {
   margin-bottom: 20px;
   text-align: center;
   margin-bottom: 110px;
-
-  th {
-    border-bottom: 1px solid #C3C3C3;
-    border-right: 1px solid #C3C3C3;
-    padding: 8px 0;
-  }
-
-  th:last-child {
-    border-right: 0px solid #C3C3C3;
-  }
-
-  td {
-    border-bottom: 1px solid #C3C3C3;
-    border-right: 1px solid #C3C3C3;
-
-  }
-
-  td:last-child {
-    border-right: 0px solid #C3C3C3;
-  }
-
+  border-collapse: collapse;
+  border:1px solid #C3C3C3;
 }
+
+
 
 footer {
   font-size: 10px;
@@ -278,7 +263,6 @@ footer {
 
   .selectbox-003 select {
     width: 100%;
-    min-width: 200px; /* 追加 */
   }
 
   // table --------------------------------------------------------------------
